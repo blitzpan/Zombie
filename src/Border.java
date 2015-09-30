@@ -15,7 +15,15 @@ public class Border extends JComponent {
 	
 	@Override
 	protected void paintComponent(Graphics g) {
-		//画线
+		//画5条横线
+		for(int i=1; i<6; i++){
+			g.drawLine(marginL, paneHeight * i, marginL + ComData.gWidth, paneHeight * i);
+		}
+		//画8条竖线
+		for(int i=0; i<9; i++){
+			g.drawLine(marginL + paneWidth * i, 0, marginL + paneWidth * i, ComData.gHeight);
+		}
+		
 		
 		
 		
