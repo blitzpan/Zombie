@@ -9,13 +9,25 @@ import javax.swing.JComponent;
 public class Border extends JComponent {
 	private int xC = 9;
 	private int yC = 5;
-	private int marginL = ComData.wWidth - ComData.gWidth;
+	private int marginL = ComData.wWidth - ComData.gWidth;//×ó±ßmargin
+	private int paneWidth = ComData.gWidth / xC;
+	private int paneHeight = ComData.gHeight / yC;
 	
 	@Override
 	protected void paintComponent(Graphics g) {
+		//»­Ïß
+		
+		
+		
+		
 		g.setColor(new Color(168,148,128));//ÉèÖÃ±ß¿òÑÕÉ«
         g.drawRoundRect(marginL, 0, ComData.gWidth, ComData.gHeight, 20, 20); //»­Ò»¸öÔ²½Ç¾ØÐÎ
-          
+        
+        
+        
+        
+        
+        
         //Ïû³ý¾â³Ý  
         RenderingHints rh = new RenderingHints(RenderingHints.KEY_ANTIALIASING,  
                                                RenderingHints.VALUE_ANTIALIAS_ON);  
